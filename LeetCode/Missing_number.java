@@ -6,23 +6,23 @@ import java.util.Arrays;
 
 public class missing {
     public static void main(String[] args) {
-        int a[]={1,2};  //Input array
-        int n=a.length; //Taking its length in variable n
-        int missing=-1;  //Since the input is betweem [0,n] we set missing -1;
-        Arrays.sort(a);//Sorting the Array
-        for(int i=0;i<n;i++){
-            if(i!=a[i]){
-                missing=i;
+        int a[] = { 1, 2 }; // Input array
+        int n = a.length; // Taking its length in variable n
+        int missing = -1; // Since the input is betweem [0,n] we set missing -1;
+        Arrays.sort(a);// Sorting the Array
+        for (int i = 0; i < n; i++) {
+            if (i != a[i]) {
+                missing = i;
                 break;
             }
         }
-        if(missing==-1){
-            missing=n;
+        if (missing == -1) {
+            missing = n;
         }
         System.out.println("Input Array: ");
-        for(int i=0;i<n;i++){
+        for (int i = 0; i < n; i++) {
             System.out.println(a[i]);
         }
-        System.out.println(missing);  //This will display the Answer.
+        System.out.println(missing); // This will display the Answer.
     }
 }
