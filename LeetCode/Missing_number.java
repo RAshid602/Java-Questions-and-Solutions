@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class missing {
     public static void main(String[] args) {
-        int a[]={1,2};  //INput array
+        int a[]={1,2};  //Input array
         int n=a.length; //Taking its length in variable n
         int missing=-1;  //Since the input is betweem [0,n] we set missing -1;
         Arrays.sort(a);//Sorting the Array
